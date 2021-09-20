@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap"
+      rel="stylesheet"
+    />
+    
+  </head>
+  <body dir="rtl">
+    <header class="header">
+      <nav id="home" class="navigate">
+        <div class="header__logo">
+          <img class="" src="../images/saramic.jpg" alt="" />
+          
+          <!-- <form action="#" class="search">
+            <input type="text" class="search__input">
+            <button class="search__button"></button>
+          </form> -->
+        </div>
+        
+      </nav>
+      
+      <div class="sidebar">
+        <a href="#home" class="saramic-nav">
+          <svg class="saramic-nav__icon">
+            <use xlink:href="icons/sprite.svg#icon-home"></use>
+          </svg>    
+        </a>
+        <a href="#aboutme" class="saramic-nav">
+          <svg class="saramic-nav__icon">
+            <use xlink:href="icons/sprite.svg#icon-file-text"></use>
+          </svg>    
+        </a>
+        <a href="#gallery" class="saramic-nav">
+          <svg class="saramic-nav__icon">
+            <use xlink:href="icons/sprite.svg#icon-book"></use>
+          </svg>    
+        </a>
+        <div class="saramic-nav">
+          <svg class="saramic-nav__icon">
+            <use xlink:href="icons/sprite.svg#icon-point-up"></use>
+          </svg>    
+        </div>
+        <a href="#contact" class="saramic-nav">
+          <svg class="saramic-nav__icon">
+            <use xlink:href="icons/sprite.svg#icon-location"></use>
+          </svg>    
+        </a>
+        
+      </div>
+
+        <div class="pictures">
+          <img
+            src="../gallery/pic1.jpg"
+            alt=""
+            class="pictures__photo pictures__photo--p1"
+          />
+          <img
+            srcset="../gallery/pic2.jpg 1x ,../gallery/pic2a.jpg 2x"
+            alt=""
+            class="pictures__photo pictures__photo--p2"
+          />
+          <img
+            src="../gallery/pic3.jpg"
+            alt=""
+            class="pictures__photo pictures__photo--p3"
+          />
+          <img
+            src="../gallery/pic4.jpg"
+            alt=""
+            class="pictures__photo pictures__photo--p4"
+          />
+        </div>
+        <div class="header__main">
+          <h1 class="header__main__primary">שרמיקה</h1>
+        </div>
+      
+
+      
+    </header>
+    <section id="aboutme" class="section-aboutme">
+      <h1 class="heading--primary">איך הכל התחיל?</h1>
+      <div class="row">
+        <div class="aboutme">
+          <figure class="aboutme__shape">
+            <img class="aboutme__image" src="images/saramic_enlarge.jpg" />
+          </figure>
+
+          <div class="aboutme__text">
+            <p>
+              בסטודיו קטן הממוקמם באחד המבנים הראשונים של מתיישבי מחניים ,נוצרים
+              באהבה כלים שימושיים, קדרות לאפייה והגשה, כוסות, קערות, קעריות,
+              צלחות הגשה , קומקומים וקנקנים.
+            </p>
+            <p>הכל בעבודת יד עם ביטוי עצמי רב לחומרים לסביבה ולכלים עצמם</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="products" class="section-products">
+      <h1 class="heading--thirdy">הכלים שבגלריה</h1>
+      <div class="row-flex">
+        <div class="category">
+          <img class="category__img" src="../icons/pan.png" alt="" />
+          <a href="#popup_kattle" class="link">קערות</a>
+        </div>
+        <div class="category">
+          <img class="category__img" src="../icons/pan.png" alt="" />
+          <a href="#popup_kattle" class="link">קערות</a>
+        </div>
+        <div class="category">
+          <img class="category__img" src="../icons/pan.png" alt="" />
+          <a href="#popup_kattle" class="link">קערות</a>
+        </div>
+        <div class="category">
+          <img class="category__img" src="../icons/pan.png" alt="" />
+          <a href="#popup_kattle" class="link">קערות</a>
+        </div>
+      </div>
+      
+      <!-- <div class="row">
+        <div class="prod-category">
+          <div class="col-1-of-4">
+            <div class="category">
+              <img class="category__img" src="../icons/pan.png" alt="" />
+              <a href="#popup_kattle" class="link">קערות</a>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="category">
+              <img class="category__img" src="../icons/pitcher.png" alt="" />
+              <a href="#popup" class="link">קנקנים</a>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="category">
+              <img
+                class="category__img"
+                src="../icons/glass-of-water.png"
+                alt=""
+              />
+              <a href="#popup" class="link">כוסות</a>
+            </div>
+          </div>
+          <div class="col-1-of-4">
+            <div class="category">
+              <img class="category__img" src="../icons/kettle.png" alt="" />
+              <a href="#popup" class="link">קומקומים</a>
+            </div>
+          </div>
+        </div> -->
+
+      </div>
+    </section>
+    <section id="commands" class="section-commands">
+      <h1 class="heading--secondary">גלריית תמונות</h1>
+      <div class="gallery">
+        <input type="radio" name="radio" id="id1" />
+        <input type="radio" name="radio" id="id2" />
+        <input type="radio" name="radio" id="id3" />
+        <input type="radio" name="radio" id="id4" />
+
+        <div class="gallery__group" id="one">
+          <img src="../gallery/pic5.jpg" alt="" class="gallery__group--photo" />
+          <img src="../gallery/pic6.jpg" alt="" class="gallery__group--photo" />
+          <img src="../gallery/pic7.jpg" alt="" class="gallery__group--photo" />
+        </div>
+
+        <div class="gallery__group" id="two">
+          <img src="../gallery/pic8.jpg" alt="" class="gallery__group--photo" />
+          <img
+            src="../gallery/pic10.jpg"
+            alt=""
+            class="gallery__group--photo"
+          />
+          <img
+            src="../gallery/pic11.jpg"
+            alt=""
+            class="gallery__group--photo"
+          />
+        </div>
+
+        <div class="gallery__group" id="three">
+          <img
+            src="../gallery/pic12.jpg"
+            alt=""
+            class="gallery__group--photo"
+          />
+          <img
+            src="../gallery/pic13.jpg"
+            alt=""
+            class="gallery__group--photo"
+          />
+          <img
+            src="../gallery/pic14.jpg"
+            alt=""
+            class="gallery__group--photo"
+          />
+        </div>
+        <div class="gallery__group" id="four">
+          <img
+            src="../gallery/pic15.jpg"
+            alt=""
+            class="gallery__group--photo"
+          />
+          <img src="../gallery/pic4.jpg" alt="" class="gallery__group--photo" />
+          <img
+            src="../gallery/pic17.jpg"
+            alt=""
+            class="gallery__group--photo"
+          />
+        </div>
+        <div class="nav">
+          <label class="dot" for="id1" class="nav__dots" id="dot1"></label>
+          <label for="id2" class="nav__dots" id="dot2"></label>
+          <label for="id3" class="nav__dots" id="dot3"></label>
+          <label for="id4" class="nav__dots" id="dot4"></label>
+        </div>
+      </div>
+    </section>
+    <!-- <section class="section-carusel">
+      <h1 class="heading--secondary">גלריית תמונות</h1>
+      <div class="carusel">
+        <input type="radio" name="radio" id="slide1" checked />
+        <input type="radio" name="radio" id="slide2" />
+        <div class="carusel__group">
+          <div class="carusel__group--items">
+            <div class="carusel__group--block">
+              <img
+                src="../gallery/pic8.jpg"
+                alt=""
+                class="carusel__group--photo1"
+              />
+            </div>
+            <div class="carusel__group--block">
+              <img
+                src="../gallery/pic5.jpg"
+                alt=""
+                class="carusel__group--photo1"
+              />
+            </div>
+            <div class="carusel__group--block">
+              <img
+                src="../gallery/pic6.jpg"
+                alt=""
+                class="carusel__group--photo1"
+              />
+            </div>
+            <div class="carusel__group--block">
+              <img
+                src="../gallery/pic7.jpg"
+                alt=""
+                class="carusel__group--photo1"
+              />
+            </div>
+            <div class="carusel__group--block">
+              <img
+                src="../gallery/pic5.jpg"
+                alt=""
+                class="carusel__group--photo1"
+              />
+            </div>
+            <div class="carusel__group--block">
+              <img
+                src="../gallery/pic6.jpg"
+                alt=""
+                class="carusel__group--photo1"
+              />
+            </div>
+          </div>
+        </div>
+        <div class="nav">
+          <label for="slide1" class="nav__crsl--dots" id="crsl--dot1"></label>
+          <label for="slide2" class="nav__crsl--dots" id="crsl--dot2"></label>
+        </div>
+      </div>
+    </section> -->
+    <!-- <div class="section-gallery"> -->
+    <section id="gallery" class="section-gallery">
+      <h1 class="heading--primary">כותבים עלי</h1>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="commands">
+            <div class="commands__text-box">
+              <h4>עליזה לרט</h4>
+              <p>מקסים. חג שמח אהובים.</p>
+            </div>
+            <div class="commands__avatar">
+              <img
+                class="commands__avatar--photo"
+                src="../avatars/avatar1.png"
+                alt=""
+              />
+            </div>
+            <!-- <img class="commands__avatar" src="../avatars/avatar1.png" alt="" /> -->
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <div class="commands">
+            <div class="commands__text-box">
+              <h4>תקוה ארמה</h4>
+              <p>הכי יפה שראיתי יצירת מופת כל הכבוד</p>
+            </div>
+            <div class="commands__avatar">
+              <img
+                class="commands__avatar--photo"
+                src="../avatars/avatar3.jfif"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-2">
+          <div class="commands">
+            <div class="commands__text-box">
+              <h4>תקוה ארמה</h4>
+              <p>הכי יפה שראיתי יצירת מופת כל הכבוד</p>
+            </div>
+            <div class="commands__avatar">
+              <img
+                class="commands__avatar--photo"
+                src="../avatars/avatar5.jfif"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+        <div class="col-1-of-2">
+          <div class="commands">
+            <div class="commands__text-box">
+              <h4>תמר לחיאני</h4>
+              <p>
+                כל ספל הוא סיפור. סיפור של יצירה. סיפור של רגע אחד שלקחת רק
+                לעצמך
+              </p>
+            </div>
+            <div class="commands__avatar">
+              <img
+                class="commands__avatar--photo"
+                src="../avatars/avatar6.jfif"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="section-contact">
+      <h1 class="heading--primary">בואו לבקר</h1>
+      <h2 class="heading__primary--sub">מחכים לכם על יד השער</h2>
+
+      <div class="contact">
+        <div class="contact__frame">
+          <h3>שרה רוזן</h3>
+          <div class="contact__detail">
+            <div class="contact__detail--phone">
+              <i class="fas fa-phone"></i>
+              <span>054-4635925</span>
+            </div>
+            <div class="contact__detail--mail">
+              <i class="fas fa-at"></i>
+              <span>doriroz@gmail.com</span>
+            </div>
+            <div class="contact__detail--facebook">
+              <i class="fab fa-facebook"></i>
+              <a
+                class="contact__link"
+                href="https://www.facebook.com/search/top?q=%D7%A9%D7%A8%D7%94%D7%9E%D7%99%D7%A7%D7%94"
+                ><span>גם בפייסבוק</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="popup" id="popup">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="../gallery/pic20.jpg" alt="" />
+          <img src="../gallery/pic21.jpg" alt="" />
+        </div>
+        <div class="popup__left">
+          <img src="../gallery/pic22.jpg" alt="" />
+          <img src="../gallery/pic24.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <a href="#products" class="popup__close">&times;</a>
+          <h2 class="heading__popup">הכל כוסות שלנו</h2>
+          <h3 class="heading__popup--sub">כדאי לבקר ולמצוא את הכוס שלכם</h3>
+          <p class="popup__text">
+            תביאו לנו את החומר, אנחנו נדאג שיהיה לכם במה לשתות.<br />את כל היופי
+            הזה אנו מחזיקים בסטודיו החדש שפתוח לקהל הרחב
+          </p>
+          <a href="" class="btn"></a>
+        </div>
+      </div>
+    </div>
+
+    <div class="popup" id="popup_kattle">
+      <div class="popup__content">
+        <div class="popup__left">
+          <img src="../gallery/pic15.jpg" alt="" />
+          <img src="../gallery/pic17.jpg" alt="" />
+        </div>
+        <div class="popup__left">
+          <img src="../gallery/pic18.jpg" alt="" />
+          <img src="../gallery/pic19.jpg" alt="" />
+        </div>
+        <div class="popup__right">
+          <a href="#products" class="popup__close">&times;</a>
+          <h2 class="heading__popup">הכל קערות שלנו</h2>
+          <h3 class="heading__popup--sub">כדאי לבקר ולמצוא את הקערה שלכם</h3>
+          <p class="popup__text">
+            תביאו לנו את החומר, אנחנו נדאג שיהיה לכם במה למזוג.<br />את כל היופי
+            הזה אנו מחזיקים בסטודיו החדש שפתוח לקהל הרחב
+          </p>
+          <a href="" class="btn"></a>
+        </div>
+      </div>
+    </div>
+    <!-- </div> -->
+    <script src="js/intersectionObserve.js"></script>
+  </body>
+</html>
+
+<!-- <section class="grid-test">
+      <div class="row">
+        <div class="col-1-of-2">
+          1 of 2
+        </div>
+        <div class="col-1-of-2">
+          1 of 2
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-3">
+          1 of 3
+        </div>
+        <div class="col-1-of-3">
+          1 of 3
+        </div>
+        <div class="col-1-of-3">
+          1 of 3
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-3">
+          1 of 3
+        </div>
+        <div class="col-2-of-3">
+          2 of 3
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-4">
+          1 of 4
+        </div>
+        <div class="col-1-of-4">
+          1 of 4
+        </div>
+        <div class="col-1-of-4">
+          1 of 4
+        </div>
+        <div class="col-1-of-4">
+          1 of 4
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-4">
+          1 of 4
+        </div>
+        <div class="col-1-of-4">
+          1 of 4
+        </div>
+        <div class="col-2-of-4">
+          2 of 4
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-1-of-4">
+          1 of 4
+        </div>
+        <div class="col-3-of-4">
+          3 of 4
+        </div>
+      </div>
+    </section> -->

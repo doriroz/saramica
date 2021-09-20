@@ -1,0 +1,70 @@
+.heading--primary {
+  font-size: 6rem;
+  text-align: center;
+  letter-spacing: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.4s;
+
+  @include respond(phone){
+    font-size: 5rem;
+    letter-spacing: 1rem;
+  }
+
+  &:hover {
+    transform: skewX(6deg);
+  }
+}
+
+.heading__primary--sub {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 2rem;
+  margin-bottom: 2rem;
+}
+
+.heading--secondary {
+  font-size: 6rem;
+  text-align: center;
+  letter-spacing: 2rem;
+  margin-bottom: 4rem;
+  // color: darkslategray;
+  background: linear-gradient(to left, $color-fourty-dark, $color-fourty-light);
+  // background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  @include respond(phone){
+    font-size: 5rem;
+    letter-spacing: 1rem;
+  }
+
+}
+
+.heading--thirdy {
+  font-size: 6rem;
+  text-align: center;
+  letter-spacing: 1rem;
+  margin-bottom: 4rem;
+  color: #1b0344;
+  // background: linear-gradient(to left, $color-fourty-dark, $color-fourty-light);
+  // -webkit-background-clip: text;
+  // -webkit-text-fill-color: transparent;
+
+  @include respond(phone){
+    font-size: 5rem;
+    letter-spacing: .5rem;
+  }
+
+}
+
+.heading__popup {
+  font-size: 2.5rem;
+  letter-spacing: 1rem;
+  margin-bottom: 2rem;
+}
+
+.heading__popup--sub {
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem;
+}

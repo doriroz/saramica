@@ -1,0 +1,79 @@
+.contact {
+  width: 70vw;
+  height: 40rem;
+
+  background-image: linear-gradient(
+      90deg,
+      rgba($color-white, 0.7) 0%,
+      rgba($color-white, 0.7) 35%,
+      transparent 35%
+    ),
+    url("../images/machanaim.png");
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative;
+  &__frame {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 27rem;
+    height: 36rem;
+    color: #333;
+    // padding: 0 5rem;
+    // border: 1px solid black;
+    h3 {
+      font-size: 3rem;
+      font-weight: 200;
+      color: #777;
+    }
+  }
+
+  &__link,
+  &:visited {
+    color: dodgerblue;
+    text-decoration: none;
+  }
+
+  &__detail {
+    font-size: 2rem;
+    color: dodgerblue;
+    &--phone,
+    &--mail,
+    &--facebook {
+      margin-top: 3rem;
+      transition: all 1.5s;
+      &:hover{
+        transform: translate(50px,0);
+
+      }
+    }
+
+    &--mail {
+      font-family: "Indie Flower", cursive;
+      font-weight: 700;
+      font-size: 2.5rem;
+      
+      
+    }
+  }
+}
+
+.fa-at,
+.fa-phone,
+.fa-facebook {
+  font-size: 2rem;
+  margin-right: 2rem;
+  color: dodgerblue;
+  padding: 1rem;
+  transition: all 0.4s;
+
+}
+
+.fa-at:hover,
+.fa-phone:hover,
+.fa-facebook:hover {
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: lightcyan;
+  box-shadow: 1rem 2rem 1rem rgba(0,0,0,.3);
+}

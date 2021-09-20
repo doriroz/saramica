@@ -1,0 +1,45 @@
+@font-face {
+  font-family: "abrahamregular";
+  src: url("../fonts/Abraham-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "miriwinwebfont";
+  src: url("../fonts/miriwin-webfont.ttf") format("truetype");
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit;
+}
+html {
+  /* in order not to force the definition on the user chnges font-size, we will refer if with % ; */
+  /* so the defualt of 16px will be 100% */
+  /* for 10px we do 10/16   */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+
+  
+  @include respond(land-port){
+    font-size: 56.5%; //1rem = 9px > 9/16 = 56.5%
+}
+
+  @include respond(tab-port){
+      font-size: 50%; //1rem = 8px > 8/16 = 50%
+  }
+
+  @include respond(big-desktop){
+      font-size: 75%; //1rem = 14px > 12/16 = 75%
+  }
+}
+
+body {
+  font-family: miriwinwebfont;
+  // font-family: "Lato", sans-serif;
+  padding: 1rem;
+  @include respond(tab-port){
+    padding: 0;
+}
+  box-sizing: border-box;
+}

@@ -1,0 +1,47 @@
+.commands {
+  width: 55rem;
+  height: 15rem;
+  padding: 5rem;
+  //   background-color: darkolivegreen;
+  background-image: linear-gradient(
+      to right,
+      rgba($color-white, 0.7),
+      rgba($color-primary-light, 0.4)
+    ),
+    url("../images/saramic5.jpg");
+  background-size: cover;
+  border: none;
+  margin: 2rem 0;
+  clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%);
+  // display: flex;
+  // justify-content: space-around;
+
+  &__avatar {
+    height: 8rem;
+    // border-radius: 50%;
+    clip-path: circle(50%);
+    display: inline-block;
+    margin-right: 4rem;
+
+    &--photo {
+      height: 100%;
+      transform: scaleY(1.1);
+      transition: all 0.4s;
+
+      &:hover {
+        transform: scaleY(1);
+      }
+    }
+  }
+
+  &__text-box {
+    font-size: 1.3rem;
+    display: inline-block;
+    vertical-align: top;
+    width: 30rem;
+  }
+}
+
+// .dot{
+
+// }

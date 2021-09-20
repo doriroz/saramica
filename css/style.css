@@ -1,0 +1,565 @@
+.u-margin-m-buttom {
+  margin-bottom: 2rem; }
+
+.u-margin-m-top {
+  margin-top: 2rem; }
+
+/*
+
+0-600px - phone
+600-900px - Tablet portrait
+900-1200px - Tablet landscape
+[1200-1800px] - is where our style apply
+1800px + 1 - Big desktop
+
+*/
+/*
+Breakppoint Argument
+-phone
+-tab-port
+-tab-land
+-big-desktop
+*/
+/*
+max-width 600px => all style css include under 600px
+min-width 600px => all style css include above 600px 
+*/
+/* px do not work as relative with media query 
+   preferred work with em - 1em = 16px
+*/
+@font-face {
+  font-family: "abrahamregular";
+  src: url("../fonts/Abraham-Regular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "miriwinwebfont";
+  src: url("../fonts/miriwin-webfont.ttf") format("truetype"); }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: inherit; }
+
+html {
+  /* in order not to force the definition on the user chnges font-size, we will refer if with % ; */
+  /* so the defualt of 16px will be 100% */
+  /* for 10px we do 10/16   */
+  font-size: 62.5%;
+  scroll-behavior: smooth; }
+  @media (max-width: 75em) {
+    html {
+      font-size: 56.5%; } }
+  @media (max-width: 56.25em) {
+    html {
+      font-size: 50%; } }
+  @media (min-width: 112.5em) {
+    html {
+      font-size: 75%; } }
+
+body {
+  font-family: miriwinwebfont;
+  padding: 1rem;
+  box-sizing: border-box; }
+  @media (max-width: 56.25em) {
+    body {
+      padding: 0; } }
+
+.heading--primary {
+  font-size: 6rem;
+  text-align: center;
+  letter-spacing: 2rem;
+  margin-bottom: 2rem;
+  transition: all 0.4s; }
+  @media (max-width: 37.5em) {
+    .heading--primary {
+      font-size: 5rem;
+      letter-spacing: 1rem; } }
+  .heading--primary:hover {
+    transform: skewX(6deg); }
+
+.heading__primary--sub {
+  font-size: 3rem;
+  text-align: center;
+  letter-spacing: 2rem;
+  margin-bottom: 2rem; }
+
+.heading--secondary {
+  font-size: 6rem;
+  text-align: center;
+  letter-spacing: 2rem;
+  margin-bottom: 4rem;
+  background: linear-gradient(to left, #472705, #bf9d83);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+  @media (max-width: 37.5em) {
+    .heading--secondary {
+      font-size: 5rem;
+      letter-spacing: 1rem; } }
+
+.heading--thirdy {
+  font-size: 6rem;
+  text-align: center;
+  letter-spacing: 1rem;
+  margin-bottom: 4rem;
+  color: #1b0344; }
+  @media (max-width: 37.5em) {
+    .heading--thirdy {
+      font-size: 5rem;
+      letter-spacing: .5rem; } }
+
+.heading__popup {
+  font-size: 2.5rem;
+  letter-spacing: 1rem;
+  margin-bottom: 2rem; }
+
+.heading__popup--sub {
+  font-size: 1.5rem;
+  letter-spacing: 0.3rem;
+  margin-bottom: 1rem; }
+
+.section-aboutme {
+  background-image: linear-gradient(to left, #e0d3c3, #fcfbf9);
+  height: 80rem;
+  padding: 10rem; }
+
+.section-products {
+  background-image: url("../images/saramic1.jpg");
+  background-size: cover;
+  height: 80rem;
+  padding: 10rem 8rem; }
+
+.section-commands {
+  background-image: linear-gradient(120deg, transparent 50%, rgba(204, 156, 106, 0.7) 40%, rgba(204, 156, 106, 0.7) 40%);
+  height: 80rem;
+  padding: 8rem 7rem; }
+
+.section-gallery {
+  background-image: linear-gradient(to left, rgba(224, 211, 195, 0.3), #fcfbf9), url("../images/saramic4.jpg");
+  background-size: cover;
+  height: 80rem;
+  padding: 10rem 8rem; }
+
+.section-contact {
+  background-image: linear-gradient(to left, #ff8300, #efcca7);
+  padding: 10rem; }
+
+.section-carusel {
+  background-color: cornsilk;
+  padding: 5rem 9.5rem;
+  height: 60rem; }
+
+.aboutme__shape {
+  width: 30rem;
+  height: 30rem;
+  float: left;
+  -webkit-shape-outside: circle(50% at 50% 50%);
+  shape-outside: circle(50% at 50% 50%);
+  -webkit-clip-path: circle(50% at 50% 50%);
+  clip-path: circle(50% at 50% 50%); }
+
+.aboutme__image {
+  height: 100%;
+  width: 100%;
+  transform: scaleY(1.1);
+  transition: all 0.4s; }
+
+.aboutme__text {
+  width: 83rem;
+  font-size: 2.4rem;
+  text-align: right;
+  word-spacing: 5px; }
+
+.aboutme:hover .aboutme__image {
+  transform: scaleY(1);
+  filter: grayscale(100%);
+  backface-visibility: hidden; }
+
+.pictures__photo {
+  width: 24rem;
+  height: 20rem;
+  position: absolute;
+  border-radius: 5px;
+  border: none;
+  box-shadow: 0.5rem 1rem 1rem rgba(0, 0, 0, 0.4);
+  transition: all 0.4s;
+  margin-top: 10rem; }
+  @media (max-width: 56.25em) {
+    .pictures__photo {
+      float: left;
+      position: relative;
+      width: 15%;
+      height: 15%;
+      margin-right: 5px; } }
+  .pictures__photo--p1 {
+    top: 10rem;
+    left: 15rem; }
+    @media (max-width: 56.25em) {
+      .pictures__photo--p1 {
+        top: 10rem;
+        left: 0; } }
+  .pictures__photo--p2 {
+    top: 20rem;
+    left: 5rem; }
+    @media (max-width: 56.25em) {
+      .pictures__photo--p2 {
+        top: 10rem;
+        left: 0; } }
+  .pictures__photo--p3 {
+    top: 25rem;
+    left: 25rem; }
+    @media (max-width: 56.25em) {
+      .pictures__photo--p3 {
+        top: 10rem;
+        left: 0; } }
+  .pictures__photo--p4 {
+    top: 35rem;
+    left: 17rem; }
+    @media (max-width: 56.25em) {
+      .pictures__photo--p4 {
+        top: 10rem;
+        left: 0; } }
+  .pictures__photo:hover {
+    transform: scale(1.2) rotate(2deg);
+    outline: 8px solid darkcyan;
+    outline-offset: 1rem;
+    z-index: 5; }
+
+.category {
+  font-size: 2rem;
+  padding: 7rem 7rem;
+  background-color: rgba(255, 250, 250, 0.5);
+  transition: all 0.4s; }
+  .category__img {
+    width: 5rem; }
+  .category:hover {
+    margin-top: -2rem;
+    margin-bottom: 2rem; }
+
+.link {
+  text-decoration: none;
+  display: block; }
+
+.commands {
+  width: 55rem;
+  height: 15rem;
+  padding: 5rem;
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 0.7), rgba(252, 251, 249, 0.4)), url("../images/saramic5.jpg");
+  background-size: cover;
+  border: none;
+  margin: 2rem 0;
+  clip-path: polygon(5% 0, 100% 0%, 95% 100%, 0% 100%); }
+  .commands__avatar {
+    height: 8rem;
+    clip-path: circle(50%);
+    display: inline-block;
+    margin-right: 4rem; }
+    .commands__avatar--photo {
+      height: 100%;
+      transform: scaleY(1.1);
+      transition: all 0.4s; }
+      .commands__avatar--photo:hover {
+        transform: scaleY(1); }
+  .commands__text-box {
+    font-size: 1.3rem;
+    display: inline-block;
+    vertical-align: top;
+    width: 30rem; }
+
+.gallery {
+  width: 93vw;
+  height: 50rem;
+  padding: 8rem;
+  margin: 3rem auto;
+  position: relative; }
+  .gallery__group {
+    width: 90%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    left: 25rem;
+    transition: all 0.2s; }
+    @media (max-width: 56.25em) {
+      .gallery__group {
+        left: 7rem; } }
+    .gallery__group--photo {
+      float: left;
+      width: 30rem;
+      border-radius: 5px;
+      transition: all 0.4s; }
+      @media (max-width: 56.25em) {
+        .gallery__group--photo {
+          width: 25rem; } }
+      .gallery__group--photo:not(:last-child) {
+        margin-right: 5rem; }
+      .gallery__group--photo:hover {
+        transform: scale(1.1);
+        filter: grayscale(100%);
+        outline: 8px solid darkcyan;
+        outline-offset: 1rem;
+        z-index: 5; }
+
+#id1,
+#id2,
+#id3,
+#id4 {
+  display: none;
+  transition: all 0.4s; }
+
+.nav {
+  width: 100%;
+  height: 12px;
+  position: absolute;
+  top: 33rem;
+  text-align: center;
+  z-index: 99; }
+  .nav__dots {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 8rem 10px;
+    cursor: pointer; }
+
+#id1:checked ~ #one,
+#id2:checked ~ #two,
+#id3:checked ~ #three,
+#id4:checked ~ #four {
+  z-index: 9;
+  transition: all 0.4s; }
+
+#id1:checked ~ .nav #dot1,
+#id2:checked ~ .nav #dot2,
+#id3:checked ~ .nav #dot3,
+#id4:checked ~ .nav #dot4 {
+  background-color: #472705; }
+
+.contact {
+  width: 70vw;
+  height: 40rem;
+  background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 35%, transparent 35%), url("../images/machanaim.png");
+  border-radius: 10px;
+  margin: 0 auto;
+  position: relative; }
+  .contact__frame {
+    position: absolute;
+    top: 2rem;
+    left: 2rem;
+    width: 27rem;
+    height: 36rem;
+    color: #333; }
+    .contact__frame h3 {
+      font-size: 3rem;
+      font-weight: 200;
+      color: #777; }
+  .contact__link, .contact:visited {
+    color: dodgerblue;
+    text-decoration: none; }
+  .contact__detail {
+    font-size: 2rem;
+    color: dodgerblue; }
+    .contact__detail--phone, .contact__detail--mail, .contact__detail--facebook {
+      margin-top: 3rem;
+      transition: all 1.5s; }
+      .contact__detail--phone:hover, .contact__detail--mail:hover, .contact__detail--facebook:hover {
+        transform: translate(50px, 0); }
+    .contact__detail--mail {
+      font-family: "Indie Flower", cursive;
+      font-weight: 700;
+      font-size: 2.5rem; }
+
+.fa-at,
+.fa-phone,
+.fa-facebook {
+  font-size: 2rem;
+  margin-right: 2rem;
+  color: dodgerblue;
+  padding: 1rem;
+  transition: all 0.4s; }
+
+.fa-at:hover,
+.fa-phone:hover,
+.fa-facebook:hover {
+  padding: 1rem;
+  border-radius: 50%;
+  background-color: lightcyan;
+  box-shadow: 1rem 2rem 1rem rgba(0, 0, 0, 0.3); }
+
+.carusel {
+  margin: 2rem auto;
+  position: relative; }
+  .carusel__group {
+    margin: 10px 15px;
+    overflow: hidden;
+    position: relative; }
+    .carusel__group--items {
+      width: 207rem;
+      position: relative;
+      transition: all 0.4s; }
+    .carusel__group--block {
+      float: left;
+      width: 345px;
+      padding: 15px; }
+    .carusel__group--photo1 {
+      border-radius: 5px;
+      width: 100%;
+      height: 27rem; }
+
+.carusel input[type="radio"] {
+  display: none; }
+
+.nav {
+  width: 100%;
+  height: 12px;
+  position: absolute;
+  top: 27rem;
+  left: 5rem;
+  text-align: center;
+  z-index: 99; }
+  .nav__crsl--dots {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    display: inline-block;
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 6rem 10px;
+    cursor: pointer; }
+
+#slide1:checked ~ .carusel__group .carusel__group--items {
+  transform: translateX(0); }
+
+#slide2:checked ~ .carusel__group .carusel__group--items {
+  transform: translateX(33rem); }
+
+#slide1:checked ~ .nav #crsl--dot1,
+#slide2:checked ~ .nav #crsl--dot2 {
+  background-color: brown; }
+
+.popup {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 200;
+  opacity: 0;
+  visibility: hidden; }
+  .popup__content {
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 70%;
+    background-color: white;
+    box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+    display: table;
+    overflow: hidden;
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(0.25);
+    transition: all 0.5s 0.2s; }
+  .popup:target {
+    opacity: 1;
+    visibility: visible; }
+  .popup:target .popup__content {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1); }
+  .popup__close {
+    position: absolute;
+    top: 2rem;
+    left: 2.5rem;
+    font-size: 3rem;
+    font-weight: 700;
+    color: #777;
+    text-decoration: none;
+    line-height: 1; }
+    .popup__close:hover {
+      color: #ff8300; }
+  .popup__left {
+    width: 25%;
+    display: table-cell; }
+  .popup__right {
+    display: table-cell;
+    vertical-align: middle;
+    padding: 0 1.5rem; }
+  .popup img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    border: 2px solid white; }
+  .popup__text {
+    font-size: 1.4rem;
+    word-spacing: 0.3rem; }
+
+.saramic-nav__icon {
+  height: 3.25rem;
+  width: 3.25rem;
+  margin: 1.5rem;
+  fill: cadetblue; }
+
+.saramic-nav-1__icon {
+  height: 3.25rem;
+  width: 3.25rem;
+  margin: 1.5rem;
+  fill: bisque; }
+
+.header {
+  background-image: linear-gradient(105deg, rgba(255, 255, 255, 0.7) 0%, rgba(255, 255, 255, 0.7) 50%, transparent 50%), url("../images/saramic-home.jpg");
+  background-size: 100vw 100vh;
+  background-position: top;
+  height: 97vh;
+  position: relative; }
+  .header__logo {
+    width: 7rem;
+    height: 7rem;
+    position: absolute;
+    top: 2%;
+    left: 2%; }
+    .header__logo img {
+      width: 100%;
+      border-radius: 50%;
+      border: 3px solid darkgrey;
+      box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.4); }
+  .header__main {
+    font-size: 5rem;
+    position: absolute;
+    top: 15%;
+    left: 60%;
+    letter-spacing: 10px;
+    padding-top: 10rem; }
+    @media (max-width: 56.25em) {
+      .header__main {
+        font-size: 3.5rem; } }
+
+.sidebar {
+  width: 5vw;
+  position: fixed; }
+
+.row {
+  max-width: 92vw;
+  margin: 1rem auto; }
+  @media (max-width: 56.25em) {
+    .row {
+      max-width: 50vw; } }
+  .row [class^="col-"] {
+    float: left; }
+    .row [class^="col-"]:not(:last-child) {
+      margin-right: 6rem; }
+      @media (max-width: 56.25em) {
+        .row [class^="col-"]:not(:last-child) {
+          margin: 0; } }
+    @media (max-width: 56.25em) {
+      .row [class^="col-"] {
+        width: 100% !important; } }
+  .row .col-1-of-4 {
+    width: calc((100% - 3 (6rem)) / 4); }
+  .row .col-1-of-2 {
+    width: calc((100% - 6rem) / 2); }
+
+.row-flex {
+  max-width: 92vw;
+  display: flex;
+  justify-content: space-around; }

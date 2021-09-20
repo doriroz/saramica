@@ -1,0 +1,57 @@
+@mixin centerBox {
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+// Media Query Manager
+/*
+
+0-600px - phone
+600-900px - Tablet portrait
+900-1200px - Tablet landscape
+[1200-1800px] - is where our style apply
+1800px + 1 - Big desktop
+
+*/
+
+@mixin responseCategory{
+  @media (max-width:900px){@content};
+}
+
+/*
+Breakppoint Argument
+-phone
+-tab-port
+-tab-land
+-big-desktop
+*/
+
+/*
+max-width 600px => all style css include under 600px
+min-width 600px => all style css include above 600px 
+*/
+
+/* px do not work as relative with media query 
+   preferred work with em - 1em = 16px
+*/
+
+@mixin respond($break-point){
+  @if($break-point==phone){
+    @media (max-width:37.5em){@content}; //600/16 = 37.5
+  }
+  
+  @if($break-point==tab-port){
+    @media (max-width:56.25em){@content};//900/16 = 56.25
+  }
+
+  @if($break-point==land-port){
+    @media (max-width:75em){@content}; // 1200/16 = 75
+  }
+  
+  @if($break-point==big-desktop){
+    @media (min-width:112.5em){@content}; //1800/16 =112.5
+  }
+}

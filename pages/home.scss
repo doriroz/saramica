@@ -1,0 +1,63 @@
+.section-aboutme {
+  background-image: linear-gradient(
+    to left,
+    $color-primary-dark,
+    $color-primary-light
+  );
+  height: 80rem;
+  padding: 10rem;
+}
+
+.section-products {
+  background-image: url("../images/saramic1.jpg");
+  background-size: cover;
+  height: 80rem;
+  padding: 10rem 8rem;
+}
+
+.section-commands {
+  // background-image: linear-gradient(to left, #cc9c6a, $color-primary-light);
+  background-image: linear-gradient(
+    120deg,
+    transparent 50%,
+    rgba(#cc9c6a, 0.7) 40%,
+    rgba(#cc9c6a, 0.7) 40%
+  );
+  height: 80rem;
+  padding: 8rem 7rem;
+}
+
+.section-gallery {
+  background-image: linear-gradient(
+      to left,
+      rgba($color-primary-dark, 0.3),
+      $color-primary-light
+    ),
+    url("../images/saramic4.jpg");
+  background-size: cover;
+  height: 80rem;
+  padding: 10rem 8rem;
+}
+
+.section-contact {
+  background-image: linear-gradient(
+    to left,
+    $color-thirdy-dark,
+    $color-thirdy-light
+  );
+  // background-size: cover;
+  padding: 10rem;
+}
+
+.section-carusel {
+  // background-image: linear-gradient(
+  //   to left,
+  //   $color-thirdy-dark,
+  //   $color-thirdy-light
+  // );
+
+  background-color: cornsilk;
+  padding: 5rem 9.5rem;
+  height: 60rem;
+  // overflow: hidden;
+}

@@ -1,0 +1,39 @@
+.row {
+  max-width: 92vw;
+  margin: 1rem auto;
+
+  @include respond(tab-port){
+    max-width: 50vw;
+  }
+
+  [class^="col-"] {
+    // display: flex;
+    float: left;
+
+    &:not(:last-child) {
+      margin-right: 6rem;
+      @include respond(tab-port){
+        margin: 0;
+      }
+    }
+
+    @include respond(tab-port){
+      width: 100%!important;
+    }
+  }
+
+  .col-1-of-4 {
+    //gutter-width is the space between elements inline
+    width: calc((100% - 3 (#{$gutter-width})) / 4);
+  }
+
+  .col-1-of-2 {
+    width: calc((100% - #{$gutter-width}) / 2);
+  }
+}
+
+.row-flex{
+  max-width: 92vw;
+  display: flex;
+  justify-content: space-around;
+}
